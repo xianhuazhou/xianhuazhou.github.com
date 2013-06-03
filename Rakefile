@@ -3,7 +3,7 @@ task :default do
   pids = [
     spawn("jekyll serve -w"),
     spawn("scss --watch assets/scss:stylesheets"),
-    spawn("jmen -o javascripts/main.js -f assets/coffee/index.coffee")
+    spawn("jmen -o javascripts/main.js -f assets/coffee/index.js")
   ]
 
   trap "INT" do
