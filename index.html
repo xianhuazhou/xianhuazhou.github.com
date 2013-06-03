@@ -1,52 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>周献华 - Xianhua Zhou</title>
-        <style type="text/css">
-            font-size: 12px;
-            a {
-                color: blue;
-            }
-            a:hover {
-                color: red;
-                text-decoration: underline;
-            }
-            ul li {
-                list-style: circle;
-                line-height: 150%;
-            }
-            footer {
-                font-size: 14px;
-                color: gray;
-                margin-left: 30px;
-                text-style: italic;
-                display: block;
-                width: 450px;
-            }
-            header {
-                display: block;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h2>Xianhua Zhou's links</h2>
-        </header>
-        <ul>
-            <li>github:  <a href="http://github.com/xianhuazhou">github.com/xianhuazhou</a></li>
-            <li>Facebook: <a href="http://www.facebook.com/xianhuazhou">www.facebook.com/xianhuazhou</a></li>
-            <li>Twitter: <a href="http://twitter.com/xianhuazhou">twitter.com/xianhuazhou</a></li>
-            <li>LinkdIn: <a href="http://cn.linkedin.com/in/xianhuazhou">cn.linkedin.com/in/xianhuazhou</a>
-            <li>RubyGems: <a href="http://rubygems.org/profiles/xianhuazhou">rubygems.org/profiles/xianhuazhou</a></li>
-        </ul>
-        <footer>
-            I'm a Web developer &amp; Linux system administrator, play around with VIM, PHP, Ruby, Javascript, MySQL, Scala etc. on Ubuntu for fun and getting things done everyday.
-            <br>
-            Welcome drop me a line at <a href="xi&#105;&#108;&#116;&#111;&#58;&#120;&#105;&#97;&#110;&#104;&#117;&#97;&#46;&#122;&#104;&#111;&#117;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#120;&#105;&#97;&#110;&#104;&#117;&#97;&#46;&#122;&#104;&#111;&#117;&#32;&#97;&#116;&#32;&#103;&#109;&#97;&#105;&#108;&#46;com</a> for more ...
-        </footer>
-        <script>for (tag in ['header', 'footer']) {
-            document.createElement(tag)
-        }</script>
-    </body>
-</html>
+---
+layout: default
+title: 周献华 - Zhou Xianhua - Xianhua Zhou
+email: xianhua.zhou@gmail.com
+---
+
+<div id="home">
+  <h1>Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
