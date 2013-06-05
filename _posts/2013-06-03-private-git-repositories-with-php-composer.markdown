@@ -2,7 +2,7 @@
 layout: post
 title:  "Private git repositories with PHP's composer"
 date:   2013-06-03 21:12:21
-categories: jekyll update
+categories: git composer 
 ---
 
 [Composer][composer] is a dependency management tool for PHP, it just like [Rubygems][rubygems]. However, to deal with private git repositories, it doesn't work for me if I follow the instructions at [this page][composer-pr], what I found that there is another way to work with private git repositories is something like:
