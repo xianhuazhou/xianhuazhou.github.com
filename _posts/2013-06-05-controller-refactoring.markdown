@@ -42,7 +42,7 @@ class UserController < ApplicationController
 end
 {% endhighlight %}
 
-Some days later, we have more functions need to implement which relate to users, e.g. changing e-mail address, saving search results, sending emails, changing avatar etc. So, do we still add these `user` related functions into the `UserController`? Yes or No, if that's all of functions of the project, and you don't need to touch it again, you could put everything into the `UserController`. Otherwise, you have to think about to put them into other controllers (or libraries) and to define some good names for that. 
+Some days later, we have more functions need to implement which relate to users, e.g. changing e-mail address, saving search results, sending emails, changing avatar etc. So, do we still add these `user` related functions into the `UserController`? Yes or No, if that's all of functions/features of the whole project, and you don't need to touch it anymore, you could put everything into the `UserController`. Otherwise, you have to think about to put them into other controllers (or libraries) and to define some good names for that. 
 
 Too many actions in a single controller just like a large method contains many lines of code, even if the length of each action is short, it's hard to read and maintain. 
 
