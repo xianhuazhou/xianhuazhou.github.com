@@ -7,7 +7,7 @@ categories: Refactoring MVC
 
 When we working with MVC frameworks such as [Ruby on Rails][ror], [Play framework][play], [Zend framework][zf] ..., most of the time, we are working on `controllers` (a series of `actions` of `controllers`). 
 
-In the beginning, a controller could just contain coupld of action methods. For example, a `UserController` (in RoR) could look like:
+In the beginning, a controller could just contain couple of action methods. For example, a `UserController` (in RoR) could look like:
 {% highlight ruby %}
 class UserController < ApplicationController
   def register
@@ -39,6 +39,7 @@ class UserController < ApplicationController
   def change_password
   end
 
+  # ...
 end
 {% endhighlight %}
 
